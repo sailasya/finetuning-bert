@@ -12,10 +12,12 @@ import pickle
 import re
 import numpy as np
 from tqdm import trange
+import nltk as nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 
 # Setup stopwords list & word (noun, adjective, and verb) lemmatizer
+nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
 
